@@ -9,84 +9,26 @@
     <description>Recent content on Kevin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Jun 2022 15:54:30 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 02 Sep 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Test2</title>
-      <link>/post/test2/</link>
-      <pubDate>Mon, 06 Jun 2022 15:54:30 +0200</pubDate>
+      <title>How to Start a Flask Project Using Visual Studio Code</title>
+      <link>/post/how-to-start-a-flask-project-using-visual-studio/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>/post/test2/</guid>
+      <guid>/post/how-to-start-a-flask-project-using-visual-studio/</guid>
       <description>
         
-          
-          
-          
-        
-        
-        
-          
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>Showcase</title>
-      <link>/showcase/</link>
-      <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/showcase/</guid>
-      <description>
-        
-          
-          
+          &lt;img src=&#34;/img/how-to-start-a-flask-project-using-visual-studio-0.png&#34;/&gt;
           
         
         
         
-          Header 2 #  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>Hello Friend</title>
-      <link>/post/hello/</link>
-      <pubDate>Wed, 17 Sep 1986 00:00:00 +0000</pubDate>
-      
-      <guid>/post/hello/</guid>
-      <description>
-        
-          &lt;img src=&#34;/img/hello.jpg&#34;/&gt;
-          
-        
-        
-        
-          &#34;Hello, friend?&#34; That&#39;s lame. Maybe I should give you a name?
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>Hello Friend</title>
-      <link>/post/test/</link>
-      <pubDate>Wed, 17 Sep 1986 00:00:00 +0000</pubDate>
-      
-      <guid>/post/test/</guid>
-      <description>
-        
-          &lt;img src=&#34;/img/hello.jpg&#34;/&gt;
-          
-        
-        
-        
-          &#34;Hello, friend?&#34; That&#39;s lame. Maybe I should give you a name?
+          Flask is a Python web micro-framework. “Micro” because it doesn’t require any particular tools or libraries. Flask main objective is to keep a simple but extensible core. There is no database abstraction feature, no authentication, no cookie manager … because a lot of extensions already did it well !
+So, at the opposite of an all-in-one framework such as Django, you can do whatever you want with Flask but nothing more.
           
         
         </description>
