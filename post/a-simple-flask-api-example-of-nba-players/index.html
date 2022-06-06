@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>
+        A simple Flask API example of NBA players ::
+        Kevin&#39;s Blog — Infosec &amp; Development
+      </title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="In my previous post, I explained how to start a Flask project into Visual Code. It is time to experiment the Flask framework by creating a very simple API. As an example, let’s say we want to implement a NBA players API.
+The data #  We don’t want to bother with a database for this example so we will use a simple JSON object. This JSON object will include all players with their attributes : firstname, lastname, nickname and an ID :"
+/>
+<meta
+  name="keywords"
+  content="infosec, security, hacking, development, web, software"
+/>
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/post/a-simple-flask-api-example-of-nba-players/" />
+
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css" />
+
+<link rel="stylesheet" href="/style.css" />
+
+
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="144x144"
+  href="/img/apple-touch-icon-144-precomposed.png"
+/>
+<link rel="shortcut icon" href="/img/favicon.png" />
+
+
+<link href="/assets/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A simple Flask API example of NBA players"/>
+<meta name="twitter:description" content="In my previous post, I explained how to start a Flask project into Visual Code. It is time to experiment the Flask framework by creating a very simple API. As an example, let’s say we want to implement a NBA players API.
+The data #  We don’t want to bother with a database for this example so we will use a simple JSON object. This JSON object will include all players with their attributes : firstname, lastname, nickname and an ID :"/>
+
+
+
+<meta property="og:title" content="A simple Flask API example of NBA players" />
+<meta property="og:description" content="In my previous post, I explained how to start a Flask project into Visual Code. It is time to experiment the Flask framework by creating a very simple API. As an example, let’s say we want to implement a NBA players API.
+The data #  We don’t want to bother with a database for this example so we will use a simple JSON object. This JSON object will include all players with their attributes : firstname, lastname, nickname and an ID :" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/a-simple-flask-api-example-of-nba-players/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-10-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-10-25T00:00:00+00:00" /><meta property="og:site_name" content="Kevin&#39;s Blog" />
+
+
+
+
+
+
+
+  </head>
+  <body class="light-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a
+  href="/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >Kevin&#39;s blog</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/archive">Archive</a></li>
+        
+      
+      
+      
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/archive">Archive</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </span>
+      
+      
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h1 class="post-title">A simple Flask API example of NBA players</h1>
+    <div class="post-meta">
+      
+        <span class="post-date">
+          2021-10-25
+        </span>
+
+        
+          
+        
+      
+
+      
+        <span class="post-author"
+          >— by Kevin</span
+        >
+
+
+      
+        <span class="post-read-time"
+          >— 3 min read</span
+        >
+      
+    </div>
+
+    
+
+    
+      <figure class="post-cover">
+  
+    <img src="/img/a-simple-flask-api-example-of-nba-players-0.png" alt="A simple Flask API example of NBA players"/>
+  
+
+  
+</figure>
+
+    
+
+    <div class="post-content">
+      
+      <p>In my previous post, I explained how to start a Flask project into Visual Code. It is time to experiment the Flask framework by creating a very simple API. As an example, let’s say we want to implement a NBA players API.</p>
+<h1 id="the-data">
+  The data
+  <a href="#the-data" class="h-anchor" aria-hidden="true">#</a>
+</h1>
+<p>We don’t want to bother with a database for this example so we will use a simple JSON object. This JSON object will include all players with their attributes : firstname, lastname, nickname and an ID :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">    <span style="color:#960050;background-color:#1e0010">players</span> <span style="color:#960050;background-color:#1e0010">=</span> [{
+	    <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">1</span>,
+	    <span style="color:#f92672">&#34;firstname&#34;</span>: <span style="color:#e6db74">&#34;Lebron&#34;</span>,
+	    <span style="color:#f92672">&#34;lastname&#34;</span>: <span style="color:#e6db74">&#34;James&#34;</span>,
+	    <span style="color:#f92672">&#34;nickname&#34;</span>: <span style="color:#e6db74">&#34;The King&#34;</span>
+    },
+    {
+	    <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">2</span>,
+	    <span style="color:#f92672">&#34;firstname&#34;</span>: <span style="color:#e6db74">&#34;Earvin&#34;</span>,
+	    <span style="color:#f92672">&#34;lastname&#34;</span>: <span style="color:#e6db74">&#34;Johson&#34;</span>,
+	    <span style="color:#f92672">&#34;nickname&#34;</span>: <span style="color:#e6db74">&#34;Magic&#34;</span>
+    },
+    {
+	    <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">3</span>,
+	    <span style="color:#f92672">&#34;firstname&#34;</span>: <span style="color:#e6db74">&#34;Julius&#34;</span>,
+	    <span style="color:#f92672">&#34;lastname&#34;</span>: <span style="color:#e6db74">&#34;Erving&#34;</span>,
+	    <span style="color:#f92672">&#34;nickname&#34;</span>: <span style="color:#e6db74">&#34;Dr. J&#34;</span>
+    }]
+</code></pre></div><h1 id="the-endpoints">
+  The endpoints
+  <a href="#the-endpoints" class="h-anchor" aria-hidden="true">#</a>
+</h1>
+<p>Let’s make it as simple as possible : We want 2 endpoints:</p>
+<ul>
+<li>“getPlayers()” that returns all the NBA players with all their attributes</li>
+<li>“getPlayer(id)” that returns only one player based on his ID</li>
+</ul>
+<p>To design it, we must define a route for each endpoints using Flask implementation : <a href="https://flask.palletsprojects.com/en/2.0.x/quickstart/#routing">https://flask.palletsprojects.com/en/2.0.x/quickstart/#routing</a></p>
+<p>Since error codes are very important for API consumers to understand what doesn’t work, be sure to catch the exception and return the correct HTTP code using the abort() function as per Flask documentation : <a href="https://flask.palletsprojects.com/en/2.0.x/quickstart/#redirects-and-errors">https://flask.palletsprojects.com/en/2.0.x/quickstart/#redirects-and-errors</a></p>
+<p><img src="../../img/a-simple-flask-api-example-of-nba-players-2.png" alt=""></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>route(<span style="color:#e6db74">&#39;/players/&#39;</span>)
+    <span style="color:#66d9ef">def</span>  <span style="color:#a6e22e">getPlayers</span>():
+	    <span style="color:#66d9ef">try</span>:
+		    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;List of players&#39;</span>
+	    <span style="color:#66d9ef">except</span>  <span style="color:#a6e22e">ValueError</span>:
+		    abort(<span style="color:#ae81ff">400</span>)
+    
+<span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>route(<span style="color:#e6db74">&#39;/player/&lt;id&gt;&#39;</span>)
+    <span style="color:#66d9ef">def</span>  <span style="color:#a6e22e">getPlayer</span>(id):
+	    <span style="color:#66d9ef">try</span>:
+		    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Attributes of player&#39;</span>
+	    <span style="color:#66d9ef">except</span>  <span style="color:#a6e22e">ValueError</span>:
+		    abort(<span style="color:#ae81ff">400</span>)
+</code></pre></div><h2 id="getplayers">
+  GetPlayers
+  <a href="#getplayers" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>Now we have to implement the 2 functions. The first one is quite simple, there is no need for pre-processing the data, we want it all. So let’s return the players object :</p>
+<pre tabindex="0"><code>TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a list.
+127.0.0.1 - - [25/Oct/2021 15:44:13] &quot;GET /players/ HTTP/1.1&quot; 500
+</code></pre><p>Oops ! That’s right, the Flask view function must return a string object. Hopefully, Flask has the jsonify() function that serialize data to a JSON and wrap it in a flask.Response class with a standard application/json mimetype.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>route(<span style="color:#e6db74">&#39;/players/&#39;</span>)
+<span style="color:#66d9ef">def</span>  <span style="color:#a6e22e">getPlayers</span>():
+    <span style="color:#66d9ef">try</span>:
+        <span style="color:#66d9ef">return</span>  jsonify(players)
+    <span style="color:#66d9ef">except</span>  <span style="color:#a6e22e">ValueError</span>:
+        abort(<span style="color:#ae81ff">400</span>)
+</code></pre></div><h2 id="getplayerid">
+  GetPlayer(id)
+  <a href="#getplayerid" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>Now, we need some pre-processing to get the right player. The Id is sent as an attribute of the requested player. “players” JSON object is not formatted as a key=id/value=playerAttributes. It means we have to navigate within all the object. How about a for loop ? Yes, why not but how about using the true power of Python ?</p>
+<p>filter() function construct an iterator from an iterable element for which a function return True. In our example, filter(the id of the player, the json object).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">filter(functionToFoundTheID, players)
+</code></pre></div><p>We iterate within “players” variable using a lambda() function that return True when the id is found.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">lambda</span>  x: x[<span style="color:#e6db74">&#34;id&#34;</span>] <span style="color:#f92672">==</span> id
+</code></pre></div><p>Finaly, we need to convert the filter() returned Iterator as a list. Ultimately, for security purpose, make sure the id URL attribute is an integer. So we have :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>route(<span style="color:#e6db74">&#39;/player/&lt;id&gt;&#39;</span>)
+<span style="color:#66d9ef">def</span>  <span style="color:#a6e22e">getPlayer</span>(id):
+    <span style="color:#66d9ef">try</span>:
+        idPlayer <span style="color:#f92672">=</span> int(id)
+        result <span style="color:#f92672">=</span> list(filter(<span style="color:#66d9ef">lambda</span>  x: x[<span style="color:#e6db74">&#34;id&#34;</span>] <span style="color:#f92672">==</span> idPlayer, players))
+        <span style="color:#66d9ef">if</span>  result:
+            <span style="color:#75715e">#return 200 json result</span>
+            <span style="color:#66d9ef">return</span>  jsonify(result)
+        <span style="color:#75715e"># unknown id</span>
+        <span style="color:#66d9ef">else</span>:
+            abort(<span style="color:#ae81ff">404</span>)
+    <span style="color:#75715e"># not an int(id)</span>
+    <span style="color:#66d9ef">except</span>  <span style="color:#a6e22e">ValueError</span>:
+        abort(<span style="color:#ae81ff">400</span>)
+</code></pre></div><h1 id="conclusion">
+  Conclusion
+  <a href="#conclusion" class="h-anchor" aria-hidden="true">#</a>
+</h1>
+<p>You can now run your Flask project and request /players/ and /player/X URLs.</p>
+<p><img src="../../img/a-simple-flask-api-example-of-nba-players-1.png" alt=""></p>
+<p>The whole project code can be found here : <a href="https://github.com/kbrault/pyFlaskAPIExample">https://github.com/kbrault/pyFlaskAPIExample</a></p>
+
+    </div>
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h"
+              >Read other posts</span
+            >
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="/post/get-the-version-of-any-wordpress-website/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">How to get the version of any Wordpress website</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="/post/how-to-start-a-flask-project-using-visual-studio/">
+                  <span class="button__text">How to Start a Flask Project Using Visual Studio Code</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+    
+      
+        
+
+      
+    
+  </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <a
+  href="/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >Kevin&#39;s blog</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span
+          >Powered by
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span
+        >
+        <span
+          >Theme created by
+          <a href="https://twitter.com/panr" target="_blank" rel="noopener">panr</a></span
+        >
+      </div>
+    
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+      
+    </div>
+
+    
+  </body>
+</html>

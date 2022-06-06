@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>
+        How to get the version of any Wordpress website ::
+        Kevin&#39;s Blog — Infosec &amp; Development
+      </title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="Have you ever wondered how many percentage of the whole internet is built with Wordpress ? 5% ? 10 % ? It is hard to find a proper number because of how deep the internet is, but we can approximate it : Between 30% and 40% ! The more popular a framework/application/OS is, the more attractive it is to attackers. Moreover, Wordpress became more and more complex and modular (with an increasing variety of plugins) which means the attack surface is getting wider."
+/>
+<meta
+  name="keywords"
+  content="infosec, security, hacking, development, web, software"
+/>
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/post/get-the-version-of-any-wordpress-website/" />
+
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css" />
+
+<link rel="stylesheet" href="/style.css" />
+
+
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="144x144"
+  href="/img/apple-touch-icon-144-precomposed.png"
+/>
+<link rel="shortcut icon" href="/img/favicon.png" />
+
+
+<link href="/assets/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to get the version of any Wordpress website"/>
+<meta name="twitter:description" content="Have you ever wondered how many percentage of the whole internet is built with Wordpress ? 5% ? 10 % ? It is hard to find a proper number because of how deep the internet is, but we can approximate it : Between 30% and 40% ! The more popular a framework/application/OS is, the more attractive it is to attackers. Moreover, Wordpress became more and more complex and modular (with an increasing variety of plugins) which means the attack surface is getting wider."/>
+
+
+
+<meta property="og:title" content="How to get the version of any Wordpress website" />
+<meta property="og:description" content="Have you ever wondered how many percentage of the whole internet is built with Wordpress ? 5% ? 10 % ? It is hard to find a proper number because of how deep the internet is, but we can approximate it : Between 30% and 40% ! The more popular a framework/application/OS is, the more attractive it is to attackers. Moreover, Wordpress became more and more complex and modular (with an increasing variety of plugins) which means the attack surface is getting wider." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/get-the-version-of-any-wordpress-website/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-01-23T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-01-23T00:00:00+00:00" /><meta property="og:site_name" content="Kevin&#39;s Blog" />
+
+
+
+
+
+
+
+  </head>
+  <body class="light-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a
+  href="/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >Kevin&#39;s blog</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/archive">Archive</a></li>
+        
+      
+      
+      
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/archive">Archive</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </span>
+      
+      
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h1 class="post-title">How to get the version of any Wordpress website</h1>
+    <div class="post-meta">
+      
+        <span class="post-date">
+          2022-01-23
+        </span>
+
+        
+          
+        
+      
+
+      
+        <span class="post-author"
+          >— by Kevin</span
+        >
+
+
+      
+        <span class="post-read-time"
+          >— 3 min read</span
+        >
+      
+    </div>
+
+    
+
+    
+      <figure class="post-cover">
+  
+    <img src="/img/get-the-version-of-any-wordpress-website-0.png" alt="How to get the version of any Wordpress website"/>
+  
+
+  
+</figure>
+
+    
+
+    <div class="post-content">
+      
+      <p>Have you ever wondered how many percentage of the whole internet is built with Wordpress ? 5% ? 10 % ? It is hard to find a proper number because of how deep the internet is, but we can approximate it : Between 30% and 40% ! The more popular a framework/application/OS is, the more attractive it is to attackers. Moreover, Wordpress became more and more complex and modular (with an increasing variety of plugins) which means the attack surface is getting wider.</p>
+<p>So, obviously, Wordpress has become a prime target. If you take a look at a security vulnerability database, you will quickly understand how active the “security battle” is :</p>
+<ul>
+<li><a href="https://www.cvedetails.com/product/4096/Wordpress-Wordpress.html?vendor_id=2337">https://www.cvedetails.com/product/4096/Wordpress-Wordpress.html?vendor_id=2337</a></li>
+<li><a href="https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=wordpress">https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=wordpress</a></li>
+</ul>
+<h1 id="security-through-obscurity">
+  Security through obscurity
+  <a href="#security-through-obscurity" class="h-anchor" aria-hidden="true">#</a>
+</h1>
+<p>The main purpose of this article is not to make an exhaustive list of security actions you can take to secure your Wordpress website. You can take a look at this official Wordpress article to harden your Wordpress website : <a href="https://wordpress.org/support/article/hardening-wordpress/">https://wordpress.org/support/article/hardening-wordpress/</a></p>
+<p>If an attacker is interessed in your website, the first reflex is to learn everything about it (version of framework, web server, operating system …) in order to have a technical map overview. He has no interest in wasting his time finding vulnerabilties by himself and his first step would be to find CVEs matching the technical map.</p>
+<p>There are several ways to find a Wordpress version of a website. Here are 2 examples :</p>
+<h2 id="find-by-meta-generator-tag">
+  Find by Meta Generator Tag
+  <a href="#find-by-meta-generator-tag" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>SEO gurus would tell you how important meta tags was (yeah, not anymore) and how important it is to fit them all (false). After a fresh install of Wordpress, you will have several meta tags values. The one we are interested to is “generator”.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;generator&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;WordPress 5.8.3&#34;</span> /&gt;
+</code></pre></div><p>You can also find this meta tag at the RSS URI website.com/feed/</p>
+<h2 id="find-by-included-version">
+  Find by Included Version
+  <a href="#find-by-included-version" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>If you have access to website.com/wp-admin/, you can also find the Wordpress version with the included version of css files :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;stylesheet&#39;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;install-css&#39;</span>  <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;https://www.website.com/wp-admin/css/install.min.css?ver=5.8.3&#39;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;text/css&#39;</span> <span style="color:#a6e22e">media</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;all&#39;</span> /&gt;
+</code></pre></div><h1 id="automate-the-search">
+  Automate the search
+  <a href="#automate-the-search" class="h-anchor" aria-hidden="true">#</a>
+</h1>
+<p>To finish, here is an example of a simple scanner that parses the source looking for these 2 ways to find the Wordpress version :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://www.yourwebsite.com&#34;</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">url_exist</span>(url_to_test):
+    <span style="color:#66d9ef">if</span> requests<span style="color:#f92672">.</span>get(url_to_test)<span style="color:#f92672">.</span>status_code <span style="color:#f92672">==</span> <span style="color:#ae81ff">200</span>:
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">findall_regex</span>(regex, url_to_test):
+    matches <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>findall(regex, url_to_test<span style="color:#f92672">.</span>content<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#34;utf-8&#34;</span>), re<span style="color:#f92672">.</span>MULTILINE)
+    <span style="color:#66d9ef">if</span> matches:
+        <span style="color:#66d9ef">return</span> matches[<span style="color:#ae81ff">0</span>] 
+    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Undefined&#34;</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">search_by_meta_generator</span>(request):
+    regex <span style="color:#f92672">=</span> <span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;&lt;meta.*?name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">generator</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">.*?content=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">WordPress (\*|\d+(?:\.\d+){0,2}(?:\.\*)?)&#34;</span>
+    <span style="color:#66d9ef">return</span> findall_regex(regex, request)
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">search_by_included_version</span>():
+    install_url <span style="color:#f92672">=</span> url<span style="color:#f92672">+</span><span style="color:#e6db74">&#39;/wp-admin/install.php&#39;</span>
+    <span style="color:#66d9ef">if</span> url_exist(install_url):
+        regex <span style="color:#f92672">=</span> <span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;wp-admin\/css\/install\.min\.css\?ver\=(\*|\d+(?:\.\d+){0,2}(?:\.\*)?)&#34;</span>
+        <span style="color:#66d9ef">return</span> findall_regex(regex, requests<span style="color:#f92672">.</span>get(install_url))
+    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Undefined&#34;</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">search_by_feed_meta_generator</span>():
+    feed_url <span style="color:#f92672">=</span> url<span style="color:#f92672">+</span><span style="color:#e6db74">&#39;/feed/&#39;</span>
+    <span style="color:#66d9ef">if</span> url_exist(feed_url):
+        regex <span style="color:#f92672">=</span> <span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;&lt;generator&gt;https:\/\/wordpress.org\/\?v\=(\*|\d+(?:\.\d+){0,2}(?:\.\*)?)&#34;</span>
+        <span style="color:#66d9ef">return</span> findall_regex(regex, requests<span style="color:#f92672">.</span>get(feed_url))
+    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Undefined&#34;</span>
+
+<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+    <span style="color:#66d9ef">try</span>: 
+        r <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(url,timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
+        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Meta Generator Version : &#39;</span><span style="color:#f92672">+</span>search_by_meta_generator(r))
+        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Included CSS Version : &#39;</span><span style="color:#f92672">+</span>search_by_included_version())
+        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Feed Meta Generator Version : &#39;</span><span style="color:#f92672">+</span>search_by_feed_meta_generator())
+    <span style="color:#66d9ef">except</span> requests<span style="color:#f92672">.</span>exceptions<span style="color:#f92672">.</span>HTTPError <span style="color:#66d9ef">as</span> error_http:
+        print (<span style="color:#e6db74">&#34;HTTP Error : &#34;</span>,error_http)
+    <span style="color:#66d9ef">except</span> requests<span style="color:#f92672">.</span>exceptions<span style="color:#f92672">.</span>ConnectionError <span style="color:#66d9ef">as</span> error_connexion:
+        print (<span style="color:#e6db74">&#34;Connexion Error : &#34;</span>,error_connexion)
+    <span style="color:#66d9ef">except</span> requests<span style="color:#f92672">.</span>exceptions<span style="color:#f92672">.</span>Timeout <span style="color:#66d9ef">as</span> error_timeout:
+        print (<span style="color:#e6db74">&#34;Timeout Error : &#34;</span>,error_timeout)
+    <span style="color:#66d9ef">except</span> requests<span style="color:#f92672">.</span>exceptions<span style="color:#f92672">.</span>RequestException <span style="color:#66d9ef">as</span> error:
+        print (<span style="color:#e6db74">&#34;Undefined Error : &#34;</span>,error)
+</code></pre></div><p>You can find the whole project into : <a href="https://github.com/kbrault/pyWordpressVersionScanner/">https://github.com/kbrault/pyWordpressVersionScanner/</a></p>
+
+    </div>
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h"
+              >Read other posts</span
+            >
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+            
+              <span class="button next">
+                <a href="/post/a-simple-flask-api-example-of-nba-players/">
+                  <span class="button__text">A simple Flask API example of NBA players</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+    
+      
+        
+
+      
+    
+  </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <a
+  href="/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >Kevin&#39;s blog</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span
+          >Powered by
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span
+        >
+        <span
+          >Theme created by
+          <a href="https://twitter.com/panr" target="_blank" rel="noopener">panr</a></span
+        >
+      </div>
+    
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+      
+    </div>
+
+    
+  </body>
+</html>
