@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kevin&#39;s Blog</title>
+    
+    
+    
+    <link>/</link>
+    <description>Recent content on Kevin&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Jun 2022 15:54:30 +0200</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Test2</title>
+      <link>/post/test2/</link>
+      <pubDate>Mon, 06 Jun 2022 15:54:30 +0200</pubDate>
+      
+      <guid>/post/test2/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>Showcase</title>
+      <link>/showcase/</link>
+      <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/showcase/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          Header 2 #  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>Hello Friend</title>
+      <link>/post/hello/</link>
+      <pubDate>Wed, 17 Sep 1986 00:00:00 +0000</pubDate>
+      
+      <guid>/post/hello/</guid>
+      <description>
+        
+          &lt;img src=&#34;/img/hello.jpg&#34;/&gt;
+          
+        
+        
+        
+          &#34;Hello, friend?&#34; That&#39;s lame. Maybe I should give you a name?
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>Hello Friend</title>
+      <link>/post/test/</link>
+      <pubDate>Wed, 17 Sep 1986 00:00:00 +0000</pubDate>
+      
+      <guid>/post/test/</guid>
+      <description>
+        
+          &lt;img src=&#34;/img/hello.jpg&#34;/&gt;
+          
+        
+        
+        
+          &#34;Hello, friend?&#34; That&#39;s lame. Maybe I should give you a name?
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          About #  Soon, maybe.
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>Archive</title>
+      <link>/archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/archive/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>
