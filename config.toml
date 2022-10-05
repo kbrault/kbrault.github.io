@@ -1,0 +1,43 @@
+baseURL = "https://kbrault.github.io"
+languageCode = "en-us"
+title = "Kevin BRAULT - Computer engineer"
+theme = "hugo-lodi-theme"
+
+
+[markup.goldmark.renderer]
+    unsafe= true
+
+[params]
+    theme_color = "#574CDD"
+    description = "Portfolio of Alexis Collado, UX Designer"
+    description_photo = "portfolio.jpg"
+    favicon = ""
+    logo = ""
+    email = "kbrault@outlook.fr"
+    twitter = "kbrault_"
+    linkedin = "https://fr.linkedin.com/in/brault-kevin"
+    github = "kbrault"
+
+
+[params.nav]
+    enable = false
+
+[params.hero]
+    enable = true
+    avatar = "avatar.jpg"
+    subtitle = "Hi! I'm Kévin, a computer engineer from France 🥖"
+    hero_right = ["**Currently a Business Analyst for a french telecommunications corporation, previously I was a C# developper and a deputy project manager.**", "I am interessed in computer security and I try to go deeper into low level architecture study.", "Beside computer stuff, I am a space exploration and astrophysics/astronomy enthusiast. I create (fr)<a href='https://espace101.github.io'>Espace101</a> to share my passion. I'm also a US sports fan and (fr)<a href='https://ladraft.fr'>LaDraft</a> founder.", "I also like to do <a href='https://www.flickr.com/photos/196019181@N05'>photos</a> and I am a wannabe astronomy photographer"]
+
+
+[params.process]
+    enable = true
+    title = "My Process"
+    subtitle = "Full Process Design"
+
+[params.case_studies]
+    enable = true
+    title = "Case Studies"
+    subtitle = "Selected Works"
+
+[params.footer]
+    enable = true
