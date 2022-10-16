@@ -26,7 +26,10 @@ theme = "hugo-lodi-theme"
     enable = true
     avatar = "avatar.jpg"
     subtitle = "Hi! I'm Kévin, a computer engineer from France 🥖"
-    hero_right = ["**Currently, I am a Business Analyst for a French telecommunications corporation, previously I was a C# developer and a deputy project manager.**", "I am interested in computer security and I try to go deeper into low level architecture study.", "Beside computer stuff, I am a space exploration and astrophysics/astronomy enthusiast. I create (fr)<a href='https://espace101.github.io'>Espace101</a> to share my passion. I'm also a US sports fan and (fr)<a href='https://ladraft.fr'>LaDraft</a> founder.", "Furthermore, I like to do <a href='https://www.flickr.com/photos/196019181@N05'>photos</a>, and I am a wannabe astronomy photographer."]
+    hero_right = ["**Currently, I am a Business Analyst for a French telecommunications corporation, previously I was a C# developer and a deputy project manager.**",
+     "I am interested in computer security, space and US sports.", 
+     "You can find my writtings bellow :<br />- <a href='https://ladraft.fr'/>laDraft.fr</a>, US sports news in french<br />- <a href='https://kbrault.medium.com/'/>Medium</a>, various articles, mostly about space, in french", 
+     "Furthermore, I like to do <a href='https://www.flickr.com/photos/196019181@N05'>photos</a>, and I am a wannabe astronomy photographer."]
 
 
 [params.process]
