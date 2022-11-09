@@ -13,7 +13,6 @@ theme = "hugo-lodi-theme"
     description_photo = "portfolio.jpg"
     favicon = ""
     logo = ""
-    email = "kbrault@outlook.fr"
     twitter = "kbrault_"
     linkedin = "https://fr.linkedin.com/in/brault-kevin"
     github = "kbrault"
@@ -26,9 +25,9 @@ theme = "hugo-lodi-theme"
     enable = true
     avatar = "avatar.jpg"
     subtitle = "Hi! I'm Kévin, a computer engineer from France 🥖"
-    hero_right = ["**Currently, I am a Business Analyst for a French telecommunications corporation, previously I was a C# developer and a deputy project manager.**",
+    hero_right = ["**<br /><br />Currently, I am a Business Analyst for a French telecommunications corporation, previously I was a C# developer and a deputy project manager.**",
      "I am interested in computer security, space and US sports.", 
-     "You can find my writtings bellow :<br />- <a href='https://ladraft.fr'/>laDraft.fr</a>, US sports news in french<br />- <a href='https://kbrault.medium.com/'/>Medium</a>, various articles, mostly about computer stuff<br />- <a href='https://espace101.org'>Espace101.org</a>, space articles in french", 
+     "You can find my writtings bellow :<br />- <a href='https://ladraft.fr'/>laDraft.fr</a>, US sports news in french<br />- <a href='https://espace101.org'>Espace101.org</a>, space articles in french", 
      "Furthermore, I like to do <a href='https://www.flickr.com/photos/196019181@N05'>photos</a>, and I am a wannabe astronomy photographer."]
 
 
