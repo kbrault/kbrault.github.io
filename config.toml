@@ -9,7 +9,7 @@ theme = "hugo-lodi-theme"
 
 [params]
     theme_color = "#574CDD"
-    description = "Portfolio of Alexis Collado, UX Designer"
+    description = "Kevin BRAULT - computer engineer from France 🥖"
     description_photo = "portfolio.jpg"
     favicon = ""
     logo = ""
