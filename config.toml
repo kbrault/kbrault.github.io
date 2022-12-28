@@ -13,8 +13,8 @@ theme = "hugo-lodi-theme"
     description_photo = "portfolio.jpg"
     favicon = ""
     logo = ""
-    twitter = "kbrault_"
-    linkedin = "https://fr.linkedin.com/in/brault-kevin"
+    twitter = ""
+    linkedin = ""
     github = "kbrault"
 
 
