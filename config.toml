@@ -1,43 +1,14 @@
-baseURL = "https://kbrault.github.io"
-languageCode = "en-us"
+theme = "lynx"
 title = "Kevin BRAULT - Computer engineer"
-theme = "hugo-lodi-theme"
 
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
 
-[markup.goldmark.renderer]
-    unsafe= true
-
-[params]
-    theme_color = "#574CDD"
-    description = "Kevin BRAULT - computer engineer from France 🥖"
-    description_photo = "portfolio.jpg"
-    favicon = ""
-    logo = ""
-    github = "kbrault"
-
-
-[params.nav]
-    enable = false
-
-[params.hero]
-    enable = true
-    avatar = "avatar.jpg"
-    subtitle = "Hi! I'm Kévin, a computer engineer from France 🥖"
-    hero_right = ["**<br /><br />Currently, I am a Business Analyst for a French telecommunications corporation, previously I was a C# developer and a deputy project manager.**",
-     "I am interested in computer security, space and US sports.", 
-     "You can find my writtings bellow :<br />- <a href='https://ladraft.fr'/>laDraft.fr</a>, US sports news in french<br />- <a href='https://kbrault.medium.com/'>Medium</a>, space and tech articles", 
-     "Furthermore, I like to do <a href='https://www.flickr.com/photos/196019181@N05'>photos</a>, and I am a wannabe astronomy photographer."]
-
-
-[params.process]
-    enable = true
-    title = "My Process"
-    subtitle = "Full Process Design"
-
-[params.case_studies]
-    enable = true
-    title = "Case Studies"
-    subtitle = "Selected Works"
-
-[params.footer]
-    enable = true
+[author]
+  name = "Hi! I'm Kévin"
+  headline = "I'm a computer engineer from France 🥖"
+  image = "author.jpg"
+  links = [
+    { github = "https://github.com/kbrault" },
+    { medium = "https://kbrault.medium.com/" }
+  ]
