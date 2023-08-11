@@ -1,12 +1,12 @@
 theme = "lynx"
-title = "Kevin BRAULT - Computer engineer"
+title = "Kevin BRAULT - Software engineer"
 
 enableEmoji = true
 disableKinds = ["taxonomy", "term"]
 
 [author]
   name = "Hi! I'm Kévin"
-  headline = "I'm a computer engineer from France 🥖"
+  headline = "I'm a software engineer from France 🥖"
   image = "author.jpg"
   links = [
     { github = "https://github.com/kbrault" },
