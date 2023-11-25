@@ -10,6 +10,7 @@
 <div class="archive">
     <ul class="list-with-title">
         {%- set section_path = section.extra.section_path | default(value="blog/") -%}
+        
         {%- if lang == config.default_language %}
             {%- set section_item = get_section(path=section_path ~ "_index.md") %}
         {%- else %}
@@ -19,6 +20,7 @@
         {% for year, posts in
         section_item.pages | group_by(attribute="year") %} {% if posts | length > 0
         %}
+        
         <li>
             <h2 class="listing-title">{{ year }}</h2>
             <ul class="listing">
