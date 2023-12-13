@@ -88,7 +88,7 @@ source myvenv/bin/activate
 
 Your work directory is ready, you installed and set up your virtual environment. The last installation step is to install the `Django` package. Make sure you are in your virtual environment :
 
-![alt](1.png)
+![alt](create-simple-blog-python-django-part1-installation-1.png)
 
 When you `source` your virtual environment, you can notice your terminal changes to include the name of your environment `(myvenv)`.
 
@@ -133,7 +133,7 @@ python manage.py runserver
 ```
 The result on `http://127.0.0.1:8000/` :
 
-![alt](2.png)
+![alt](create-simple-blog-python-django-part1-installation-2.png)
 
 Et voila !
 

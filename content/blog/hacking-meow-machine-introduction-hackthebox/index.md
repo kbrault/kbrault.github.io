@@ -12,7 +12,7 @@ quick_navigation_buttons = true
 footnote_backlinks = true
 toc = false
 +++
-![](1.webp)
+![](hacking-meow-machine-introduction-hackthebox-1.webp)
 
 **Hack The Box is a massive hacking playground, and infosec community of members who learn, hack, play, exchange ideas and methodologies. One of the main feature of HTB is “Labs”. Every lab is a generate machine dedicated to apply what you have learned. There are a lot of labs, from the easiest one to the more insane. Each lab or “machine” has a name, and you have to answer questions and, finally, retrieve the flag to complete it. Here we have “Meow” machine. This is the very first machine and a very good introduction to let you install your hacking environment ands experiment HTB. So let’s explore it.**
 
@@ -28,39 +28,39 @@ The first step to try out HTB lab is to have a proper machine suited for hacking
 
 There are several ways to install a Virtual Machine on your computer. For our use case, I would recommand the use of a virtualization software such as VMWare Player or VirtualBox. Finally, I tried a lot of Linux/UNIX based OS and I would suggest ParrotOS. So, let’s install a ParrotOS Virtual Machine on VMWare Player :
 
-![](2.webp)
+![](hacking-meow-machine-introduction-hackthebox-2.webp)
 
 * First, download and install VMWare Player : [https://www.vmware.com/fr/products/workstation-player.html](https://www.vmware.com/fr/products/workstation-player.html)
 
 * Download a ParrotOS ISO : [https://parrotsec.org/download/](https://parrotsec.org/download/). Note that for a while, Parrot provide a customized image adapted to Hack The Box labs and academy.
 
-![](3.webp)
+![](hacking-meow-machine-introduction-hackthebox-3.webp)
 
 * On VMWare Player, create a VM and load your ParrotOS image :
 
-![](4.webp)
+![](hacking-meow-machine-introduction-hackthebox-4.webp)
 
 * Most of the time, VMWare will detect the OS and customized the VM with the best options. If VMWare doesn’t detect the OS, you can select Debian 10 (ParrotOS is based on Debian) :
 
-![](5.webp)
+![](hacking-meow-machine-introduction-hackthebox-5.webp)
 
 * In the next step, select at least 20gb of disk space on a virtual disk into multiple file :
 
-![](6.webp)
+![](hacking-meow-machine-introduction-hackthebox-6.webp)
 
 * VMWare will create the VM on the location you selected. Once done, I suggest you to customized your VM and set the memory size to 4Gb and 2 processor cores :
 
-![](7.webp)
+![](hacking-meow-machine-introduction-hackthebox-7.webp)
 
 * You can now start your VM :
 
-![](8.webp)
+![](hacking-meow-machine-introduction-hackthebox-8.webp)
 
 # Connect to HTB VPN and spawn the machine
 
 Start your virtual machine and go to HTB labs to begin the Meow challenge. The first step is to connect your VM to Starting Point VPN before starting the HTB machine. On the right panel, select “OpenVPN”, select the VPN access and server and download the **.ovpn** file.
 
-![](9.webp)
+![](hacking-meow-machine-introduction-hackthebox-9.webp)
 
 This files contains the VPN configuration you can use as an argument to OpenVPN in your ParrotOS VM :
 
@@ -71,11 +71,11 @@ This files contains the VPN configuration you can use as an argument to OpenVPN 
 
 You should be connected to HTB VPN if you have this message :
 
-![](10.webp)
+![](hacking-meow-machine-introduction-hackthebox-10.webp)
 
 You can now spawn the machine so HTB will create an instance and prompt the IP you will have to use.
 
-![](11.webp)
+![](hacking-meow-machine-introduction-hackthebox-11.webp)
 
 You are now ready to answer the 9 questions of this lab. Here few tips :
 
