@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="https://kbrault.github.io/feed_style.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:base="http://purl.org/atompub/base/1.0/" xml:lang="en" xml:base="https:&#x2F;&#x2F;kbrault.github.io&#x2F;">
+    <str:translations xmlns:str="https://github.com/welpo/tabi">
+        <str:about_feeds>This is a web feed, also known as an Atom feed. Subscribe by copying the URL from the address bar into your newsreader</str:about_feeds>
+        <str:visit_the_site>Visit website</str:visit_the_site>
+        <str:recent_posts>Recent posts</str:recent_posts>
+    </str:translations><link rel="extra-stylesheet" href="https://kbrault.github.io/skins/evangelion.css?h=41eda3a4073389a00bbd" /><title>#!kbrault - science</title>
+        <subtitle>I’m a software engineer from France 🥖.</subtitle>
+    <link href="https://kbrault.github.io/tags/science/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://kbrault.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-12-03T00:00:00+00:00</updated>
+    <id>https://kbrault.github.io/tags/science/atom.xml</id>
+    <entry xml:lang="en">
+        <title>How did Eratosthenes calculate the circumference of the Earth 2200 years ago with an accuracy of 500km?</title>
+        <published>2022-12-03T00:00:00+00:00</published>
+        <updated>2022-12-03T00:00:00+00:00</updated>
+        <author>
+            <name>kbrault</name>
+        </author>
+        <link rel="alternate" href="https://kbrault.github.io/blog/eratosthenes-calculate-circumference-earth-2200-years-ago/" type="text/html"/>
+        <id>https://kbrault.github.io/blog/eratosthenes-calculate-circumference-earth-2200-years-ago/</id>
+        <summary type="html">Eratosthenes was a Greek philosopher, astronomer, mathematician and poet born in 274 BC in Cyrene in present-day Libya and died in 194 BC in Alexandria, Egypt. He was a renowned scholar of his time and is famous for being the first whose method of measuring the circumference of the Earth is known today.</summary>
+        </entry>
+    <entry xml:lang="en">
+        <title>Why does the moon only show us one side?</title>
+        <published>2022-12-02T00:00:00+00:00</published>
+        <updated>2022-12-02T00:00:00+00:00</updated>
+        <author>
+            <name>kbrault</name>
+        </author>
+        <link rel="alternate" href="https://kbrault.github.io/blog/why-does-the-moon-only-show-us-one-side/" type="text/html"/>
+        <id>https://kbrault.github.io/blog/why-does-the-moon-only-show-us-one-side/</id>
+        <summary type="html">The Moon is the easiest astronomical object to observe. Simply raise your head on a clear night to see it (except during the new moon phases, when it is positioned between the Earth and the Sun). No need for an astronomical device, your eyes are enough. If you want to appreciate its surface, simple binoculars can be useful. But after accurate observation, humans have realized that the Moon always shows the same side. It is however in revolution around the Earth and in rotation on itself, so why can’t we see it in its entirety?</summary>
+        </entry>
+</feed>

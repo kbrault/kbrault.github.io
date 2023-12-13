@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="https://kbrault.github.io/feed_style.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:base="http://purl.org/atompub/base/1.0/" xml:lang="en" xml:base="https:&#x2F;&#x2F;kbrault.github.io&#x2F;">
+    <str:translations xmlns:str="https://github.com/welpo/tabi">
+        <str:about_feeds>This is a web feed, also known as an Atom feed. Subscribe by copying the URL from the address bar into your newsreader</str:about_feeds>
+        <str:visit_the_site>Visit website</str:visit_the_site>
+        <str:recent_posts>Recent posts</str:recent_posts>
+    </str:translations><link rel="extra-stylesheet" href="https://kbrault.github.io/skins/evangelion.css?h=41eda3a4073389a00bbd" /><title>#!kbrault - IT security</title>
+        <subtitle>I’m a software engineer from France 🥖.</subtitle>
+    <link href="https://kbrault.github.io/tags/it-security/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://kbrault.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-01-07T00:00:00+00:00</updated>
+    <id>https://kbrault.github.io/tags/it-security/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Hacking : “Meow” Machine or an Introduction to HackTheBox</title>
+        <published>2023-01-07T00:00:00+00:00</published>
+        <updated>2023-01-07T00:00:00+00:00</updated>
+        <author>
+            <name>kbrault</name>
+        </author>
+        <link rel="alternate" href="https://kbrault.github.io/blog/hacking-meow-machine-introduction-hackthebox/" type="text/html"/>
+        <id>https://kbrault.github.io/blog/hacking-meow-machine-introduction-hackthebox/</id>
+        <summary type="html">Hack The Box is a massive hacking playground, and infosec community of members who learn, hack, play, exchange ideas and methodologies. One of the main feature of HTB is “Labs”. Every lab is a generate machine dedicated to apply what you have learned. There are a lot of labs, from the easiest one to the more insane. Each lab or “machine” has a name, and you have to answer questions and, finally, retrieve the flag to complete it. Here we have “Meow” machine. This is the very first machine and a very good introduction to let you install your hacking environment ands experiment HTB. So let’s explore it.</summary>
+        </entry>
+</feed>
