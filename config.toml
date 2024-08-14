@@ -39,7 +39,7 @@ default_theme = "dark"
 # contrast (in light theme) for readability and might not be suitable for all users.
 # Furthermore, low contrasting elements will affect your Google Lighthouse rating.
 # All other skins have optimal contrast.
-skin = "monochrome"
+skin = "teal"
 
 # Set browser theme colour. Can be a single colour or [light, dark].
 # Note: Bright colors may be ignored in dark mode.
@@ -88,7 +88,7 @@ footnote_backlinks = true
 
 # Enable KaTeX for all posts.
 # Can be set at page or section levels, following the hierarchy: page > section > config. See: https://welpo.github.io/tabi/blog/mastering-tabi-settings/#settings-hierarchy
-katex = false
+katex = true
 
 # Quick navigation buttons.
 # Adds "go up" and "go to comments" buttons on the bottom right (hidden for mobile).
@@ -130,7 +130,7 @@ social_media_card = ""
 menu = [
     { name = "blog", url = "blog", trailing_slash = true, emoji="💻 & 🚀" },
     { name = "archives", url = "archive", trailing_slash = true, emoji ="🗃️" },
-    { name = "tags", url = "tags", trailing_slash = true, emoji = "🏷️" },
+    #{ name = "tags", url = "tags", trailing_slash = true, emoji = "🏷️" },
     #{ name = "projects", url = "projects", trailing_slash = true },
 ]
 
