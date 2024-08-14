@@ -1,5 +1,5 @@
 +++
-title = "How to build a blog with Python Django - (Part 1) Installation"
+title = "How to install Django ? "
 date = 2023-12-12
 
 description = "Django is a high-level, open-source Python web framework that simplifies the creation of complex, database-driven websites by providing tools and libraries for rapid development. Let's build a blog from scratch with it."
