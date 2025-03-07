@@ -1,0 +1,25 @@
+<pre>Hello ! I'm Kévin This is an export of my Joplin notes, maybe it will be a real website later. It is basically an hodgepodge of maths and computer science writings.</pre>
+<div>
+	<% page.posts.forEach(function(post) { %>
+		<% if (post.lang == page.lang) { %>
+            <div class="post-item">
+                <p class="post-date">
+                    <%= date(post.date, "YYYY-MM-DD" ) %> 
+                    <% post.tags.forEach(function(tag){ %>
+                        <a href="<%- url_for_lang(page.lang, tag.path) %>">
+                            #<%= tag.name %>
+                        </a>
+                    <% }) %>
+                </p>
+                <h2 class="post-title">
+                    <a href="<%- url_for(post.path) %>">
+                        <%= post.title %>
+                    </a>
+                </h2>
+                <hr class="post-hr">
+            </div>
+		<% } %>
+	<% }) %>
+</div>
+
+<%- partial('_partial/paginator') %>
