@@ -1,5 +1,6 @@
 <div class="post">
-	<h1><%= page.title %></h1>
+    <p class="postdate"><%= new Date(page.date).toLocaleDateString('en-En', { day: 'numeric', month: 'long', year: 'numeric' }) %></p>
+	<h1 class="posttitle"><%= page.title %></h1>
 	<% if (page.toc !== false) { %>
         <nav class="toc">
             <%- toc(page.content) %>

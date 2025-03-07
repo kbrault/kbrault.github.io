@@ -3,8 +3,8 @@
 	<% page.posts.forEach(function(post) { %>
 		<% if (post.lang == page.lang) { %>
             <div class="post-item">
-                <p class="post-date">
-                    <%= date(post.date, "YYYY-MM-DD" ) %> 
+                <p class="postdate">
+                    <%= new Date(post.date).toLocaleDateString('en-En', { day: 'numeric', month: 'long', year: 'numeric' }) %>
                     <% post.tags.forEach(function(tag){ %>
                         <a href="<%- url_for_lang(page.lang, tag.path) %>">
                             #<%= tag.name %>

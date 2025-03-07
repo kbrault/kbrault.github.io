@@ -8,8 +8,8 @@
 	<ul>
 		<% page.posts.forEach(function(post) { %>
 			<li>
-				<span class="post-date">
-					<%= date(post.date, "YYYY-MM-DD" ) %>
+				<span class="postdate">
+					<%= new Date(post.date).toLocaleDateString('en-En', { day: 'numeric', month: 'long', year: 'numeric' }) %>
 				</span>
 				<a href="<%- url_for(post.path) %>">
 					<%= post.title %>
