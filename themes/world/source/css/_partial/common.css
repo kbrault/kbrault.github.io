@@ -278,3 +278,26 @@ h1.posttitle {
 	font-size: 1.35em !important; /* Slightly larger than normal text */
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.footer {
+    background-color: #f8f9fa; /* Couleur de fond douce */
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    color: #333; /* Couleur du texte */
+    border-top: 1px solid #ddd; /* Légère séparation */
+}
+
+.footer .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.footer p {
+    margin: 0;
+    font-weight: 400;
+}

@@ -71,7 +71,7 @@ tag_map:
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
-meta_generator: true
+meta_generator: false
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -107,3 +107,9 @@ mermaid:
   enable: true
   version: "10.4.0"  # Version de Mermaid.js à utiliser
   theme: "default"    # Ou "dark", "forest", "neutral"
+
+katex:
+  enable: true
+
+plugins:
+  - hexo-filter-katex

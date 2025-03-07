@@ -105,3 +105,6 @@ deploy:
 
 generator_plus:
   language: ['en']
+
+katex:
+  enable: true

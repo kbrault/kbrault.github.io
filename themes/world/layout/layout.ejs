@@ -9,7 +9,7 @@
 	<script type="module">
 		import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
 		mermaid.initialize({ startOnLoad: true, theme: 'default' });
-	  </script>
+	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/lisp.min.js"></script>
 	<script>hljs.highlightAll();</script>
 
@@ -22,12 +22,10 @@
                 options: {
                     lazyMargin: "200px",
                 },
-                loader: {load: ['ui/lazy']}
-
+                loader: { load: ['ui/lazy'] }
             };
         </script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 	<% } %>
 
 	<%- css('css/style.css') %>
@@ -37,8 +35,21 @@
 <body>
 	<%- partial('_partial/header') %>
 	<div class="main">
-		<%- body %>
+		<div class="inner">
+			<%- body %>
+		</div>
 	</div>
+	<footer class="footer">
+		<div class="inner" style="text-align: center;">
+			<p>Generated with Hexo and Joplin. Last modified: <script>
+				let lastModifiedDate = new Date("<%= site.posts.sort('updated', -1).first().updated.toISOString() %>");
+				document.write(lastModifiedDate.toLocaleDateString('en-EN', { day: 'numeric', month: 'long', year: 'numeric' }));
+			</script></p>
+			<p>All content is free to use. | Contact: <script>
+				document.write('<a href="mailto:' + 'kbrault' + '@' + 'protonmail.com' + '">kbrault[at]protonmail.com</a>');
+			</script></p>
+		</div>
+	</footer>
 </body>
 
 </html>
