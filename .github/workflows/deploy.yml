@@ -29,21 +29,26 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+      - name: Disable Corepack (force npm)
+        run: corepack disable
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: pnpm
+          cache: npm
+
+      - name: Check Node.js and npm versions
+        run: |
+          node -v
+          npm -v
 
       - name: Install dependencies
-        run: pnpm i # or pnpm install / yarn install / bun install
+        run: npm install
 
       - name: Build
         run: |
-          pnpm build
+          npm run build
           touch public/.nojekyll
 
       - name: Setup Pages
