@@ -4,7 +4,7 @@
 	word-wrap: break-word;
 	box-sizing: border-box;
 	min-width: 200px;
-	max-width: 980px;
+	max-width: 1100px;
 	margin: 0 auto;
 	padding: 20px 80px 20px 80px;
 }
@@ -35,6 +35,8 @@ h1.posttitle {
 	padding-bottom: 0.3em;
 	font-size: 1.7em;
 	border-bottom: 1px solid #d8dee4;
+	margin-top: 0px;
+	padding-top: 0px;
 }
 
 .main h2 {
@@ -206,48 +208,73 @@ h1.posttitle {
 }
 
 .toc {
-	list-style: none;
+    list-style: none;
+    font-size: 0.9em; /* Texte compact */
+    line-height: 1.2; /* Réduction de l’espacement vertical */
+    max-width: 250px; /* TOC moins large */
+    background-color: white;
+    /* Flottant à droite */
+    float: right;
+    margin-left: 20px; /* Espace entre le TOC et le texte */
+    margin-bottom: 10px; /* Évite qu'il colle trop au texte suivant */
 }
 
-.toc ol {
-    list-style: none !important; /* Forcer la suppression */
-    counter-reset: item; /* Réinitialiser le compteur */
+/* Masquer les sous-niveaux `h4`, `h5`, `h6` */
+.toc .toc-item.toc-level-4,
+.toc .toc-item.toc-level-5,
+.toc .toc-item.toc-level-6 {
+    display: none;
 }
 
-.toc ol li {
-    counter-increment: item; /* Supprime la numérotation native */
+/* Assurer que seuls `h1`, `h2`, `h3` restent visibles */
+.toc .toc-item.toc-level-1,
+.toc .toc-item.toc-level-2,
+.toc .toc-item.toc-level-3 {
+    display: block;
+}
+.toc ol, .toc ul {
+    list-style: none !important;
+    padding-left: 8px; /* Réduction de l’indentation */
+    margin: 2px 0; /* Espacement réduit */
+}
+
+.toc ol li, .toc ul li {
+    margin: 2px 0; /* Réduction de l’espace entre les éléments */
+    padding-left: 3px;
 }
 
 .toc ol li::before {
-    content: ""; /* Supprime tout affichage de compteur */
-}
-
-
-.toc ul {
-    list-style: none; /* Supprime les puces et les numéros */
-    padding-left: 15px; /* Réduit l’indentation */
-    margin-left: 5px;
-    border-left: none; /* Supprime la double bordure */
-}
-
-.toc li {
-    margin: 5px 0;
-    padding-left: 5px;
+    content: ""; /* Supprime la numérotation automatique */
 }
 
 .toc a {
     text-decoration: none;
     color: #007acc;
+    display: inline-block; /* Compact */
+    padding: 1px 2px; /* Réduction de l’espace autour des liens */
+    border-radius: 2px;
 }
 
 .toc a:hover {
+    background: #e2e6ea;
     text-decoration: underline;
 }
 
-.postdate  {
+/* Style compact de la date */
+.postdate {
     font-size: 1em;
     color: #666;
     font-style: italic;
     margin-top: -5px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.updated-date{
+	font-size: 0.8em;
+}
+
+.siteTitle a {
+    text-decoration: none; /* Removes the underline */
+	font-size: 1.35em !important; /* Slightly larger than normal text */
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

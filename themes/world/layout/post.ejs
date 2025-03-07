@@ -1,10 +1,15 @@
 <div class="post">
-    <p class="postdate"><%= new Date(page.date).toLocaleDateString('en-En', { day: 'numeric', month: 'long', year: 'numeric' }) %></p>
-	<h1 class="posttitle"><%= page.title %></h1>
-	<% if (page.toc !== false) { %>
+    <p class="postdate">
+        <%= new Date(page.date).toLocaleDateString('en-EN', { day: 'numeric', month: 'long', year: 'numeric' }) %>
+        <% if (page.updated && page.updated !== page.date) { %>
+            <span class="updated-date"> (Updated on: <%= new Date(page.updated).toLocaleDateString('en-EN', { day: 'numeric', month: 'long', year: 'numeric' }) %>)</span>
+        <% } %>
+    </p>
+    <h1 class="posttitle"><%= page.title %></h1>
+    <% if (page.toc !== false) { %>
         <nav class="toc">
             <%- toc(page.content) %>
         </nav>
     <% } %>
-	<%- page.content %>
+    <%- page.content %>
 </div>
