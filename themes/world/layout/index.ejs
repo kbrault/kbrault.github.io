@@ -1,8 +1,30 @@
 <pre>Hello ! I'm Kévin. This is an export of my Joplin notes, maybe it will be a real website later. It is basically an hodgepodge of maths and computer science writings.</pre>
+
+<% 
+    const postsByYear = {};
+    page.posts.forEach(function(post) {
+        if (post.lang === page.lang) {
+            const year = new Date(post.date).getFullYear();
+            if (!postsByYear[year]) {
+                postsByYear[year] = [];
+            }
+            postsByYear[year].push(post);
+        }
+    });
+    const sortedYears = Object.keys(postsByYear).sort((a, b) => b - a);
+%>
+
 <div>
-	<% page.posts.forEach(function(post) { %>
-		<% if (post.lang == page.lang) { %>
+    <% sortedYears.forEach(function(year) { %>
+        <h1 class="year-title"><%= year %></h1>
+        <% postsByYear[year].forEach(function(post) { %>
             <div class="post-item">
+                
+                <h2 class="post-title">
+                    <a href="<%- url_for(post.path) %>">
+                        <%= post.title %>
+                    </a>
+                </h2>
                 <p class="postdate">
                     <%= new Date(post.date).toLocaleDateString('en-En', { day: 'numeric', month: 'long', year: 'numeric' }) %>
                     <% post.tags.forEach(function(tag){ %>
@@ -11,15 +33,10 @@
                         </a>
                     <% }) %>
                 </p>
-                <h2 class="post-title">
-                    <a href="<%- url_for(post.path) %>">
-                        <%= post.title %>
-                    </a>
-                </h2>
                 <hr class="post-hr">
             </div>
-		<% } %>
-	<% }) %>
+        <% }) %>
+    <% }) %>
 </div>
 
 <%- partial('_partial/paginator') %>
